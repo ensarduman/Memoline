@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ensarduman.memoline.View.Views.MasterLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/userBackground"
+    tools:context="com.ensarduman.memoline.View.UserLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left">
+            <com.ensarduman.memoline.View.Views.AppnameText
+                android:id="@+id/textAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="75sp"
+                android:layout_gravity="center_horizontal"
+                android:includeFontPadding="false"
+                />
+        </LinearLayout>
+        <com.ensarduman.memoline.View.Views.FormLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.ensarduman.memoline.View.Views.FormTextView
+                android:id="@+id/txtUserLoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/form_text_size"
+                android:ems="10"/>
+
+
+            <com.ensarduman.memoline.View.Views.FormEditText
+                android:id="@+id/txtUserLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_edittext_margin"
+                android:hint="@string/user_login_password"
+                android:textSize="@dimen/form_text_size"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <com.ensarduman.memoline.View.Views.FormContinueButton
+                android:id="@+id/btnUserLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_button_top"
+                android:ems="10"
+                android:textSize="@dimen/form_text_size"
+                android:text="@string/user_login_button" />
+        </com.ensarduman.memoline.View.Views.FormLayout>
+    </LinearLayout>
+</com.ensarduman.memoline.View.Views.MasterLayout>

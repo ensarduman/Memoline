@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">memoline</string>
+    <string name="info">CLick the back button to close the keyboard, click the EditText to open it again.</string>
+    <string name="height">Keyboard height (pixels):</string>
+    <string name="enter_filter_tags">Filtering Tags</string>
+    <string name="enter_note">Note</string>
+    <string name="enter_tags">Tags</string>
+    <string name="note_delete_confirmation">Are you sure you want to delete selected notes?</string>
+    <string name="logout_confirmation">Are you sure you want to logout?</string>
+    <string name="user_logout">Logout</string>
+    <string name="user_email_hint">Email</string>
+    <string name="user_email_button">Login</string>
+    <string name="user_email_newuser">New User</string>
+    <string name="user_email_title">Add User</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="user_create_name">Name</string>
+    <string name="user_create_surname">Surname</string>
+    <string name="user_create_password">Password</string>
+    <string name="user_create_repassword">Re - Password</string>
+    <string name="user_create_button">Save &amp; Login</string>
+    <string name="change_password">Change Password</string>
+    <string name="user_current_password">Current Password</string>
+    <string name="user_new_password">New Password</string>
+    <string name="user_new_repassword">New Re - Password</string>
+    <string name="change_password_save">Save</string>
+
+    <string name="user_login_password">Password</string>
+    <string name="user_login_button">Login</string>
+    <string-array name="defaultTags">
+        <item>work</item>
+        <item>school</item>
+        <item>market</item>
+    </string-array>
+
+    <!--Toast messages-->
+    <string name="toastmessage_login_failed">Wrong password.</string>
+    <string name="toastmessage_facebook_login_failed">Login failed.</string>
+    <string name="toastmessage_process_failed">Process failed.</string>
+    <string name="toastmessage_invalid_value"> is invalid.</string>
+    <string name="toastmessage_user_already_exists">Email already in use.</string>
+    <string name="toastmessage_passwords_not_match">Passwords not match.</string>
+    <string name="toastmessage_passwords_invalid">The password length should be between 6 and 18. And should not contain spaces.</string>
+    <string name="toastmessage_email_wrong">Email is wrong.</string>
+    <string name="toastmessage_notes_copied">Copied on clipboard.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <!--Toast messages-->
+
+    <!--FACEBOOK LOGIN-->
+    <string name="facebook_app_id">1974494682801585</string>
+    <string name="fb_login_protocol_scheme">fb1974494682801585</string>
+    <!--FACEBOOK LOGIN-->
+
+</resources>

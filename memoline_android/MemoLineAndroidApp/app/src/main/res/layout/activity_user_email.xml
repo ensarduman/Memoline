@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ensarduman.memoline.View.Views.MasterLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/userBackground"
+    tools:context="com.ensarduman.memoline.View.UserEmailActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:menu="">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left">
+            <com.ensarduman.memoline.View.Views.AppnameText
+                android:id="@+id/textAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="75sp"
+                android:layout_gravity="center_horizontal"
+                android:includeFontPadding="false"
+                />
+        </LinearLayout>
+        <com.ensarduman.memoline.View.Views.FormLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.ensarduman.memoline.View.Views.FormEditText
+                android:id="@+id/txtUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_email_hint"
+                android:textSize="@dimen/form_text_size"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_button_top"
+                android:orientation="horizontal">
+                <com.ensarduman.memoline.View.Views.FormContinueButton
+                    android:id="@+id/btnUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/form_button_left_right"
+                    android:ems="10"
+                    android:textSize="@dimen/form_text_size"
+                    android:text="@string/user_email_button"
+                    android:layout_weight="1"/>
+
+                <com.ensarduman.memoline.View.Views.FormNewButton
+                    android:id="@+id/btnUserNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_button_left_right"
+                    android:ems="10"
+                    android:textSize="@dimen/form_text_size"
+                    android:text="@string/user_email_newuser"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_button_left_right"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+        </com.ensarduman.memoline.View.Views.FormLayout>
+
+    </LinearLayout>
+</com.ensarduman.memoline.View.Views.MasterLayout>

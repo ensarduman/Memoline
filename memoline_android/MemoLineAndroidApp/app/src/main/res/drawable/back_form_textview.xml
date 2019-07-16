@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners
+                android:radius="5dp" />
+            <padding
+                android:right="10dp"
+                android:left="10dp"
+                android:top="5dp"
+                android:bottom="5dp"
+                />
+
+
+            <stroke
+                android:width="2dp"
+                android:color="@color/formEditTextBack"
+                />
+
+        </shape>
+    </item>
+</layer-list>
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--palette_primary_1-->
+    <color name="appnameText">@color/palette_primary_1</color>
+    <color name="noteContentSelectedText">@color/palette_primary_1</color>
+    <color name="hashtagText">@color/palette_primary_1</color>
+    <color name="autoCompleteHashtagTextBack">@color/palette_primary_1</color>
+
+    <!--palette_primary_4-->
+    <color name="colorPrimary">@color/palette_primary_4</color>
+    <color name="colorPrimaryDark">@color/palette_primary_4</color>
+    <color name="toolBarBack">@color/palette_primary_4</color>
+    <color name="userBackground">@color/palette_primary_4</color>
+
+    <!--palette_complement_0-->
+    <color name="noteContentDefault">@color/palette_complement_0</color>
+    <color name="noteContentCheckedText">@color/palette_complement_0</color>
+
+    <!--palette_secondary1_4-->
+    <color name="noteContentDefaultText">@color/palette_secondary1_4</color>
+    <color name="noteContentSelected">@color/palette_secondary1_4</color>
+    <color name="noteInputText">@color/palette_secondary1_4</color>
+
+    <!--palette_complement_3-->
+    <color name="noteContentChecked">@color/palette_complement_3</color>
+    <color name="formContinueButton">@color/palette_complement_3</color>
+
+    <!--palette_complement_0-->
+    <color name="formNewButton">@color/palette_complement_0</color>
+
+    <!--palette_primary_3-->
+    <color name="hashtagTextBack">@color/palette_primary_3</color>
+    <color name="autoCompleteHashtagText">@color/palette_primary_3</color>
+    <color name="colorAccent">@color/palette_primary_3</color>
+    <color name="textInputBackTint">@color/palette_primary_3</color>
+
+    <!--palette_primary_1-->
+    <color name="hashtagHintText">@color/palette_primary_2</color>
+    <color name="filterSepperator">@color/palette_primary_2</color>
+    <color name="newNoteLayout">@color/palette_primary_2</color>
+    <color name="formEditTextBack">@color/palette_primary_2</color>
+</resources>

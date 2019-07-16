@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ensarduman.memoline.View.Views.MasterLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.ensarduman.memoline.View.MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:menu="">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolBarBack"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="left">
+                <com.ensarduman.memoline.View.Views.AppnameText
+                    android:id="@+id/textAppName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="-10sp"
+                    android:includeFontPadding="false"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llySelectedActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/btnEditNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:src="@drawable/edit_note" />
+
+                <ImageButton
+                    android:id="@+id/btnCopyNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/copy_notes" />
+
+                <ImageButton
+                    android:id="@+id/btnDeleteNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/delete_note" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/llyMainActions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:gravity="right">
+
+                <ImageButton
+                    android:id="@+id/btnReload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/syncronize" />
+
+                <ImageButton
+                    android:id="@+id/btnAddUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/actionbar_login" />
+
+                <ImageButton
+                    android:id="@+id/btnEditUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/actionbar_user" />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout android:id="@+id/llyFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_hashtag_edittext_top"
+            android:baselineAligned="true"
+            android:paddingRight="8dp"
+            android:orientation="horizontal">
+
+
+            <com.ensarduman.memoline.View.Views.HashtagEditText
+                android:id="@+id/textFilter"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textColor="@color/hashtagText"
+                android:textColorHint="@color/hashtagHintText"
+                android:textColorHighlight="@color/hashtagHintText"
+                android:hint="@string/enter_filter_tags"
+                android:padding="2dp"
+                android:backgroundTint="@android:color/transparent"
+                android:textCursorDrawable="@color/hashtagHintText"
+                app:locationOnScreen="top"
+                app:tagType="multi"
+                android:textSize="11sp"></com.ensarduman.memoline.View.Views.HashtagEditText>
+
+            <ImageButton
+                android:id="@+id/btnRemoveFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:visibility="gone"
+                android:src="@drawable/filter_remove" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/filter_empty" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/filterSepperator"/>
+
+            <ImageButton
+                android:id="@+id/btnFilterChecked"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@null"
+                android:src="@drawable/filter_check_none" />
+
+        </LinearLayout>
+        <com.ensarduman.memoline.View.Views.NotesScrollView android:id="@+id/scvNotes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:id="@+id/llyNotes"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"></LinearLayout>
+        </com.ensarduman.memoline.View.Views.NotesScrollView>
+        <LinearLayout android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/newNoteLayout"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_hashtag_edittext"
+                    android:paddingRight="5dp">
+
+                    <com.ensarduman.memoline.View.Views.HashtagEditText
+                        android:id="@+id/textHashtagInput"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/hashtagText"
+                        android:textColorHint="@color/hashtagHintText"
+                        android:textColorHighlight="@color/hashtagHintText"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="@string/enter_tags"
+                        app:locationOnScreen="bottom"
+                        app:tagType="multi"
+                        android:padding="2dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textCursorDrawable="@color/hashtagHintText"
+                        android:textSize="11sp"></com.ensarduman.memoline.View.Views.HashtagEditText>
+
+
+
+                    <ImageButton
+                        android:id="@+id/btnRemoveTags"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:visibility="gone"
+                        android:src="@drawable/filter_remove" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:src="@drawable/tag"
+                        android:textStyle="italic">
+
+                    </ImageView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <EditText
+                        android:id="@+id/textInput"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/enter_note"
+                        android:textSize="15sp"
+                        android:textColor="@color/noteInputText"
+                        android:backgroundTint="@color/textInputBackTint"
+
+                        >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/btnSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:src="@drawable/paper_plane"></ImageButton>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.ensarduman.memoline.View.Views.MasterLayout>

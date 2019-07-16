@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">memoline</string>
+    <string name="info">CLick the back button to close the keyboard, click the EditText to open it again.</string>
+    <string name="height">Keyboard height (pixels):</string>
+    <string name="enter_filter_tags">Filtrelenecek Etiketler</string>
+    <string name="enter_note">Notunuz</string>
+    <string name="enter_tags">Etiketler</string>
+    <string name="note_delete_confirmation">Seçili notları silmek istediğinizden emin misiniz?</string>
+    <string name="logout_confirmation">Çıkmak istediğinizden emin misiniz?</string>
+    <string name="user_logout">Çıkış Yap</string>
+    <string name="user_email_hint">Email</string>
+    <string name="user_email_button">Giriş</string>
+    <string name="user_email_newuser">Yeni Kullanıcı</string>
+    <string name="user_email_title">Kullanıcı Ekle</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+
+    <string name="user_create_name">Ad</string>
+    <string name="user_create_surname">Soyad</string>
+    <string name="user_create_password">Şifre</string>
+    <string name="user_create_repassword">Şifre Tekrar</string>
+    <string name="user_create_button">Kaydet &amp; Giriş</string>
+    <string name="change_password">Şifre Değiştir</string>
+    <string name="user_current_password">Mevcut Şifre</string>
+    <string name="user_new_password">Yeni Şifre</string>
+    <string name="user_new_repassword">Yeni Şifre Tekrar</string>
+    <string name="change_password_save">Kaydet</string>
+
+    <string name="user_login_password">Şifre</string>
+    <string name="user_login_button">Giriş</string>
+    
+    <string-array name="defaultTags">
+        <item>iş</item>
+        <item>okul</item>
+        <item>alışveriş</item>
+    </string-array>
+
+    <!--Toast messages-->
+    <string name="toastmessage_login_failed">Şifre hatalı.</string>
+    <string name="toastmessage_facebook_login_failed">Giriş başarısız.</string>
+    <string name="toastmessage_process_failed">İşlem başarısız.</string>
+    <string name="toastmessage_invalid_value"> değeri geçersiz.</string>
+    <string name="toastmessage_user_already_exists">Bu email kullanımda.</string>
+    <string name="toastmessage_passwords_not_match">Şifreler eşleşmiyor.</string>
+    <string name="toastmessage_passwords_invalid">Şifrenizin uzunluğu 6 ile 18 arasında olmalıdır. Türkçe karakter ve boşluk içermemelidir.</string>
+    <string name="toastmessage_email_wrong">Email hatalı.</string>
+    <string name="toastmessage_notes_copied">Panoya kopyalandı.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <!--Toast messages-->
+
+    <!--FACEBOOK LOGIN-->
+    <string name="facebook_app_id">1974494682801585</string>
+    <string name="fb_login_protocol_scheme">fb1974494682801585</string>
+    <!--FACEBOOK LOGIN-->
+</resources>
